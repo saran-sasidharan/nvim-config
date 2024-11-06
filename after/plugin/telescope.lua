@@ -3,3 +3,5 @@ vim.keymap.set('n', '<leader>pf', builtin.find_files, { desc = 'Telescope find f
 vim.keymap.set('n', '<C-p>', builtin.git_files, { desc = 'Telescope find git files' })
 vim.keymap.set('n', '<leader>ps', function()
 	builtin.grep_string({search = vim.fn.input("Grep > ")}) end, { desc = 'Telescope grep string' })
+vim.keymap.set('n', '<leader>pS', builtin.grep_string, { desc = 'Telescope grep word under cursor' })
+vim.keymap.set('n', '<leader>pfh', builtin.git_bcommits, {desc = "Telescope show commit history of buffer file with diff preview"})
