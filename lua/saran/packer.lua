@@ -37,4 +37,13 @@ return require('packer').startup(function(use)
   use "almo7aya/openingh.nvim"
 
   use "lewis6991/gitsigns.nvim"
+
+  -- nvim v0.7.2
+use({
+    "kdheepak/lazygit.nvim",
+    -- optional for floating window border decoration
+    requires = {
+        "nvim-lua/plenary.nvim",
+    },
+})
 end)
