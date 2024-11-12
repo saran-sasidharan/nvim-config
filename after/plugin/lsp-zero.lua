@@ -39,6 +39,7 @@ require'lspconfig'.html.setup{}
 require'lspconfig'.pylsp.setup{}
 require'lspconfig'.lua_ls.setup{}
 require'lspconfig'.vimls.setup{}
+require'lspconfig'.jsonls.setup{}
 
 
 local cmp = require('cmp')
